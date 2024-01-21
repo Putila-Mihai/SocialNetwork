@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="442.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkapp.controlers.Application">
+    <children>
+        <TabPane fx:id="tabPane" layoutX="4.0" prefHeight="442.0" prefWidth="707.0" style="-fx-background-color: #232323;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Profile">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="342.0" prefWidth="584.0" style="-fx-background-color: #2b2b2b;">
+                            <children>
+                                <Text fx:id="username" fill="WHITE" layoutX="290.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" wrappingWidth="133.9150848388672" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="282.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <Tab text="Friends">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ListView fx:id="friendsList" layoutY="-2.0" prefHeight="413.0" prefWidth="205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <ScrollPane layoutX="514.0" layoutY="2.0" prefHeight="414.0" prefWidth="507.0" AnchorPane.bottomAnchor="-234.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                                <VBox prefHeight="345.0" prefWidth="504.0" />
+                                            </content>
+                                        </ScrollPane>
+
+                                        <ListView fx:id="messagesFriendList" layoutX="206.0" layoutY="14.0" prefHeight="413.0" prefWidth="363.0" AnchorPane.bottomAnchor="-233.0" AnchorPane.leftAnchor="206.0" AnchorPane.topAnchor="0.0" />
+
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <Tab text="Requests">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ListView fx:id="friendsRequestList" prefHeight="413.0" prefWidth="633.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+                                <Button layoutX="646.0" layoutY="148.0" mnemonicParsing="false" onAction="#acceptFriendRequest" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Accept">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0" />
+                                    </font>
+                                </Button>
+
+                                <Button layoutX="644.0" layoutY="223.0" mnemonicParsing="false" onAction="#declineFriendRequest" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Decline">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0" />
+                                    </font>
+                                </Button>
+
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <Tab text="All Users">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ListView fx:id="userList" prefHeight="413.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                <Button graphicTextGap="8.0" layoutX="597.0" layoutY="177.0" mnemonicParsing="false" onAction="#sendRequest" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Send Request" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Button>
+
+                                <Button layoutX="597.0" layoutY="140.0" mnemonicParsing="false" onAction="#prevAction" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Prev" />
+
+                                <Button layoutX="652.0" layoutY="140.0" mnemonicParsing="false" onAction="#nextAction" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Next" />
+
+                                <ComboBox fx:id="comboBox" layoutX="597.0" layoutY="100.0" prefWidth="103.0" onAction="#comboBoxAction">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="5" />
+                                            <String fx:value="15" />
+                                            <String fx:value="25" />
+                                            <String fx:value="30" />
+                                        </FXCollections>
+                                    </items>
+                                </ComboBox>
+
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+                <Tab text="Settings">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+.root {
+    -fx-background-color: #2b2b2b;
+}
+
+.label-title {
+    -fx-text-fill: #ff6f0a;
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: #4d4d4d;
+    -fx-text-fill: white;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 1;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-background-color: #666666;
+    -fx-border-color: #666666;
+}
+
+.button-login {
+    -fx-background-color: #ff6f0a;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+}
+
+.hyperlink-signup {
+    -fx-text-fill: #ff6f0a;
+}
+
+.label-error {
+    -fx-fill: #ff6f0a;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 9.0;
+}
+
+.button-login:hover {
+    -fx-background-color: #e55900;
+    -fx-text-fill: white;
+}

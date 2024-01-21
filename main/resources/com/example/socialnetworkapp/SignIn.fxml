@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b2b2b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkapp.controlers.SignIn">
+    <children>
+        <Label layoutX="238.0" layoutY="14.0" text="SignUP" textFill="#ff6f0a">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="first_name" layoutX="14.0" layoutY="88.0" onKeyPressed="#onFirstnameTextChanged" prefHeight="26.0" prefWidth="190.0" promptText="First Name" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" />
+
+        <TextField fx:id="last_name" layoutX="14.0" layoutY="126.0" onKeyPressed="#onLastnameTextChanged" prefHeight="26.0" prefWidth="190.0" promptText="Last Name" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" />
+
+        <TextField fx:id="email" layoutX="14.0" layoutY="166.0" onKeyPressed="#onEmailTextChanged" prefHeight="26.0" prefWidth="190.0" promptText="Email" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" />
+
+        <TextField fx:id="password" layoutX="14.0" layoutY="204.0" onKeyPressed="#onPasswordTextChanged" prefHeight="26.0" prefWidth="190.0" promptText="Strong Password" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" />
+
+        <TextField fx:id="password_confirm" layoutX="14.0" layoutY="239.0" onKeyPressed="#onConfirmPasswordTextChanged" prefHeight="26.0" prefWidth="190.0" promptText="Confirm Password" style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" />
+
+        <Button fx:id="createAccount" layoutX="46.0" layoutY="290.0" mnemonicParsing="false" onAction="#onCreateAccountClick" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #ff6f0a; -fx-text-fill: white;" text="Create">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+
+        <Text fx:id="emailErrorText" fill="#ff6f0a" layoutX="205.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 9.0;" text="Not a Valid Email!" visible="false" wrappingWidth="189.5999999999999" />
+
+        <Text fx:id="passwordErrorText" fill="#ff6f0a" layoutX="204.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 9.0;" text="Passwords Didn’t Match!" visible="false" wrappingWidth="189.5999999999999" />
+
+        <Text fx:id="firstnameErrorText" fill="#ff6f0a" layoutX="205.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 9.0;" text="Not a Real Firstname!" visible="false" wrappingWidth="189.5999999999999" />
+
+        <Text fx:id="lastnameErrorText" fill="#ff6f0a" layoutX="205.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 9.0;" text="Not a Real Lastname!" visible="false" wrappingWidth="189.5999999999999" />
+
+        <Text fill="#ff6f0a" layoutX="35.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Arial'; -fx-font-size: 13.0;" text="Already have an account?" />
+
+        <Hyperlink layoutX="195.0" layoutY="351.0" onAction="#BackToLogIn" prefHeight="26.0" prefWidth="86.0" style="-fx-font-family: 'Arial'; -fx-font-size: 19.0;" text="Log In!" textFill="#ff6f0a" />
+    </children>
+</AnchorPane>

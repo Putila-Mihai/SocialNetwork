@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkapp.controlers.LogIn">
+    <children>
+        <Label layoutX="233.0" layoutY="82.0" text="Sign In" styleClass="label-title">
+            <font>
+                <Font name="System Bold" size="37.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="email" layoutX="225.0" layoutY="157.0" onKeyTyped="#onTextChanged" prefHeight="26.0" prefWidth="150.0" promptText="Email" styleClass="text-field" />
+
+        <PasswordField fx:id="password" layoutX="225.0" layoutY="214.0" onKeyTyped="#onPasswordChanged" prefHeight="26.0" prefWidth="150.0" promptText="Password" styleClass="password-field" />
+
+        <Button fx:id="logInButton" layoutX="225.0" layoutY="267.0" mnemonicParsing="false" onAction="#onLogInButtonCLick" prefHeight="26.0" prefWidth="111.0" styleClass="button-login" text="Enter">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+
+        <Hyperlink layoutX="320.0" layoutY="302.0" onAction="#onSignInClick" prefHeight="29.0" prefWidth="97.0" text="Sign up!" styleClass="hyperlink-signup">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Hyperlink>
+
+        <Label layoutX="160.0" layoutY="303.0" prefHeight="27.0" prefWidth="166.0" text="Don't have an account?" styleClass="label-title">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+
+        <Text fx:id="emailErrorText" fill="#ff6f0a" layoutX="225.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-error" text="Wrong email!" visible="false" wrappingWidth="57.64306640625" />
+
+        <Text fx:id="passwordErrorText" fill="#ff6f0a" layoutX="225.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-error" text="Wrong password!" visible="false" wrappingWidth="83.20000000000005" />
+    </children>
+</AnchorPane>
