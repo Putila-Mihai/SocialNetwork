@@ -3,4 +3,5 @@ full semester project.The app provides a login/register screen,after creating an
 
 ![Screenshot 2024-02-22 120857](https://github.com/Putila-Mihai/SocialNetwork/assets/128553152/d5346656-6b4e-4d8f-8081-466ad2b13a2d)
 ![Screenshot 2024-02-22 120923](https://github.com/Putila-Mihai/SocialNetwork/assets/128553152/a542f766-142f-4fab-9c4e-8669aebb724d)
-![Screenshot 2024-02-22 120521](https://github.com/Putila-Mihai/SocialNetwork/assets/128553152/99b8d706-def4-4c8d-8b18-1febb850b645)
+
+![Screenshot 2024-02-28 230939](https://github.com/Putila-Mihai/SocialNetwork/assets/128553152/e3dafcb7-602b-42df-b461-bb4bdb924267)
